@@ -9,7 +9,6 @@ import com.apps.todoapp.presentation.navigation.DashRouteScreen
 import com.apps.todoapp.presentation.navigation.Graphs
 import com.apps.todoapp.presentation.screens.dashboard.screens.HomeScreen
 import com.apps.todoapp.presentation.screens.dashboard.screens.MessageScreen
-import com.apps.todoapp.presentation.screens.profile.ProfileScreen
 
 @Composable
 fun DashboardNavGraph(

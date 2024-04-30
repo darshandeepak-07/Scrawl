@@ -77,7 +77,7 @@ fun HomeScreen(
                 trailingIcon = {
                     IconButton(
                         onClick = {
-                                  homeScreenViewModel.addThought(Thought(thought = thought, createdBy = UserDetails.username ?: ""))
+                                  homeScreenViewModel.addThought(Thought(thought = thought, createdBy = UserDetails.username ?: "", comment = null))
                                 thought = ""
                         },
                         modifier = Modifier.size(24.dp)) {
@@ -104,6 +104,7 @@ fun HomeScreen(
         ){
             homeScreenViewModel.thoughts.value?.forEach {
                 ThoughtCard(
+                    thoughtId = it.id,
                     creator = it.createdBy,
                     thought = it.thought
                 )
